@@ -70,12 +70,12 @@ radio_weak = tk.Radiobutton(root, text="Weak", variable=strength_var, value="Wea
 radio_weak.pack()
 
 # Checkbutton for including numbers
-var_numbers = tk.BooleanVar()
+var_numbers = tk.BooleanVar(value=True)  # Default to True (to include numbers initially)
 check_numbers = tk.Checkbutton(root, text="Include Numbers", variable=var_numbers)
 check_numbers.pack(pady=5)
 
 # Checkbutton for including symbols
-var_symbols = tk.BooleanVar()
+var_symbols = tk.BooleanVar(value=True)  # Default to True (to include symbols initially)
 check_symbols = tk.Checkbutton(root, text="Include Symbols", variable=var_symbols)
 check_symbols.pack(pady=5)
 
